@@ -289,8 +289,7 @@ const app = {
         this.currentIndex = this.config.index
         this.songListed.push(this.config.currentIndex)
         console.log(this.songListed);
-        randomBtn.classList.toggle('active', this.isRandom)
-        repeatBtn.classList.toggle('active', this.isRepeat)
+
 
     },
     start: function () {
@@ -308,9 +307,8 @@ const app = {
         // Render playlist
         this.render()
         // load button on config
-        // randomBtn.classList.toggle('active')
-        // repeatBtn.classList.toggle('active')
-
+        randomBtn.classList.toggle('active', this.isRandom)
+        repeatBtn.classList.toggle('active', this.isRepeat)
     }
 }
 app.start()
